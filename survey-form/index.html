@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+    <div class="head">
+    <h1 id = "title">Survey Form</h1>
+    <p id = "description" >This form is created by Ranjan Sharma as a part of Learning html, css</p>
+    </div>
+    <form action="" id="survey-form">
+        <div class="form-div">
+            <label for="name" id = "name-label">Name</label>
+            <input id = "name" class = "form-inputs"type = "text" placeholder = "Enter Your Name" required>
+        </div>
+        <div class="form-div">
+            <label for="email" id ="email-label">Email</label>
+            <input id = "email" class = "form-inputs" type = "email" placeholder = "Enter Your Email" required>
+        </div>
+        <div class = "form-div">
+            <label for="number" id = "number-label">Age</label>
+            <input id = "number" class = "form-inputs" type = "number" min = "10"  max = "55" placeholder = "Enter Your Age">
+        </div>
+        <div class="form-div">
+            <p>What option describes your current role</p>
+            <select id = "dropdown" class = "form-inputs" required>
+            <option disabled selected value>Select Your Current Role</option>
+            <option value="student">Student</option>
+            <option value="full-time">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <div class="form-div">
+            <p>Would you recommend this form template to your friends ?</p>
+            
+            <label for = "input-4">
+                <input type="radio" name = "recommend" id="input-4" value = "definetly" checked>
+                Definetly
+            </label>
+            
+            <label for = "input-5">
+                <input type="radio" name = "recommend" id="input-5" value = "may-be">
+                May be</label>
+            
+            <label for = "input-6">
+                <input type="radio" name = "recommend" id="input-6" value = "not-sure">
+                Not sure</label>
+        </div>
+        <div class = "form-div">
+            <p>What is your favourite feature of freecodecamp</p>
+            <select id = "drop-down-2" name="fav-feature" class = "form-inputs" required>
+                <option disabled selected value>Select an option</option>
+                <option value = "challenges">Challanges</option>
+                <option value = "projects">Projects</option>
+                <option value = "community">Community</option>
+                <option value = "open-source">Open Source</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <p>Which tech you are currently Working on?</p>
+            <label for="input-1">
+                <input type = "checkbox" id = "input-1" value = "front-end">
+                Front-End
+            </label>
+            <label for="input-2">
+                <input type = "checkbox" id = "input-2" value = "back-end">
+                Back-End
+            </label>
+            <label for="input-3">
+                <input type = "checkbox" id = "input-3" value = "data-science">
+                Data Science
+            </label>
+            <label for="input-7">
+                <input type = "checkbox" id = "input-7" value = "andriod-dev">
+                Android Development
+            </label>
+        </div>
+        <div class="form-div">
+            <p>Any comments or suggestions about this form?</p>
+            <textarea id = "comments-section" name = "comments" placeholder="Enter Your Comments here..."></textarea>
+        </div>
+        <div class="form-div">
+            <button type = "submit" id = "submit">Submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
